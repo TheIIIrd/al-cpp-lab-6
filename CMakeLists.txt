@@ -11,5 +11,5 @@ add_executable(TimeExceptionPattern timeexception/TimeException.cpp
                                     timeexception/OutOfRangeException.cpp)  # Создаем исполняемый файл.
 
 if(BUILD_DEMO)
-  add_executable(TimeExceptionPatternDemo demo/main.cpp) # Получаем исходные демо тестов.
+  add_executable(TimeExceptionPatternDemo main/main.cpp) # Получаем исходные демо тестов.
 endif()
