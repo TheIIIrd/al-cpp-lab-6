@@ -5,11 +5,11 @@ project(TimeExceptionPattern)  # Задаем название проекта.
 
 option(BUILD_DEMO "Build demo" ON)     # Опция для сборки демо. По умолчанию включена.
 
-add_executable(TimeExceptionPattern timeexception/TimeException.cpp
-                                    timeexception/TimeException.cpp
-                                    timeexception/OutOfRangeException.cpp
-                                    timeexception/OutOfRangeException.cpp)  # Создаем исполняемый файл.
+add_executable(TimeExceptionPattern src/timeexception/TimeException.cpp
+                                    src/timeexception/TimeException.cpp
+                                    src/timeexception/OutOfRangeException.cpp
+                                    src/timeexception/OutOfRangeException.cpp)  # Создаем исполняемый файл.
 
 if(BUILD_DEMO)
-  add_executable(TimeExceptionPatternDemo main/main.cpp) # Получаем исходные демо тестов.
+  add_executable(TimeExceptionPatternDemo src/main/main.cpp) # Получаем исходные демо тестов.
 endif()
